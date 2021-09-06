@@ -11,7 +11,7 @@ import csv
 # from lxml import html
 
 
-class Wireplan:    
+class SearchPlan:    
     
     def __init__(self):
         self.driver = driver = webdriver.Firefox()
@@ -27,23 +27,11 @@ class Wireplan:
                 
         print("Basic Search...")
         print("")
-        # stevens_pt_pumps_qam_groups_url = self.stevens_pt_pumps_qam_groups_url
-        # driver.get(stevens_pt_pumps_qam_groups_url)
         
-        # wait = WebDriverWait(self.driver, 10, poll_frequency=1, ignored_exceptions=[NoSuchElementException,
-        #                                                    ElementNotVisibleException,
-        #                                                    ElementNotSelectableException])
-        # # element = wait.until(EC.element_to_be_clickable(by_type, locator))
-        
-        # print("Search Options...")
-        # print("")
-        # element = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='page-search']//form[@class='page-search']//div[@class='page-search-box']//p[@class='search']/a")))
-        # element.click()
-        
-        time.sleep(7)
+        time.sleep(3)
         driver.quit()
 
         
-ff = Wireplan()
-ff.login_process()   # User login
+ff = SearchPlan()
+ff.test()
 
